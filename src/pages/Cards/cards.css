@@ -1,0 +1,12 @@
+.filterBtn {
+  padding: 0.5rem 1rem;
+  background-color: rgb(201, 253, 253);
+  width: fit-content;
+  border-radius: 0.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.filterBtn.active {
+  font-weight: 700;
+  background-color: rgb(84, 255, 255);
+}
