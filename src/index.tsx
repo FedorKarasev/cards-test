@@ -5,14 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { store } from './app/stores/store';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom';
 import { CardInfo } from './pages/CardInfo/CardInfo';
 import { NotFoundpage } from './pages/CardInfo/404/NotFoundPage';
 import { Cards } from './pages/Cards/Cards';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <App />,
